@@ -49,8 +49,8 @@ for k, data in mappings.items():
             values = to_list(line)
             data["values"].append(values)
             if "map" in k:
-                start_src, start_dst, value_range = values[1], values[0], values[2]
-                data["mappings"][(start_src, start_src + value_range)] = start_dst, start_dst + value_range
+                key_start, value_start, value_range = values[1], values[0], values[2]
+                data["mappings"][(key_start, key_start + value_range)] = value_start, value_start + value_range
 
 
 seeds = mappings["seeds"]["values"][0]
