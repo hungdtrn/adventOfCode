@@ -87,10 +87,10 @@ for i in range(0, len(seeds), 2):
             
             if not found:
                 # No overlapping
-                new_intervals.append(interval)
+                new_intervals.append((query_start, query_end))
 
         intervals = new_intervals
 
     for interval in intervals:
-        ans = min(ans, query_start)
+        ans = min(ans, interval[0])
 print(ans)
