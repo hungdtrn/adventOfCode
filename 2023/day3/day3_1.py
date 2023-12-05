@@ -34,14 +34,12 @@ for row in range(ROW):
         else:
             if is_adjacent(pos_list):
                 ans += current_num
-            else:
-                print(current_num)
+
             current_num = 0
             pos_list = []
 
         
     if data[row][-1].isdigit() and is_adjacent(pos_list):
         ans += current_num
-
 
 print(ans)
