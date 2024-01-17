@@ -4,7 +4,7 @@ import sys
 import math
 sys.setrecursionlimit(100000)
 
-input_path = "demo.txt"
+input_path = "day14.txt"
 ans = 0
 data = []
 with open(input_path, "r") as f:
